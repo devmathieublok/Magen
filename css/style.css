@@ -4,6 +4,9 @@ body, html {
 	font-family: Jazmen;
 	overflow-x: hidden;
 	overflow-y: hidden;
+	min-height: 100vh;
+  	/* mobile viewport bug fix */
+  	min-height: -webkit-fill-available;
 }
 
 html {
