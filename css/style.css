@@ -213,6 +213,7 @@ p {
 	height: 100%;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
+	min-height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 915px) {
