@@ -4,7 +4,7 @@ body, html {
 	font-family: Jazmen;
 }
 
-/* Landscape */
+/* Landscape *//*
 .Landscape-Message {
 	display: none;
 	background-color: #00403D;
@@ -49,7 +49,7 @@ body, html {
   	.Landscape-Message {
   		display: flex;
   	}
-}
+}*/
 /* Landscape */
 
 html {
