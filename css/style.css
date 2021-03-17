@@ -3,8 +3,9 @@ body, html {
 	padding: 0px;
 	font-family: Jazmen;
 	min-height: 100vh;
-  	/* mobile viewport bug fix */
   	min-height: -webkit-fill-available;
+  	overflow-x: hidden;
+  	overflow-y: hidden;
 }
 
 html {
@@ -304,12 +305,11 @@ footer {
 	justify-content: space-between;
 	z-index: 99;
 	flex-direction: column;
-	background-color: orange;
 }
 
 @media screen and (max-width: 414px) {
 	footer {
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 }
 
