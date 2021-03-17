@@ -50,16 +50,18 @@ a {
 }
 
 video {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 1000;
 	object-fit:contain;
 	background-color: #F4EEE7;
 	cursor: none;
-	overflow: hidden;
+	overflow: hidden !important;
 }
 
 /* H2 Responsive & Desk*/
