@@ -2,8 +2,6 @@ body, html {
 	margin: 0px;
 	padding: 0px;
 	font-family: Jazmen;
-	min-height: 100vh;
-  	min-height: -webkit-fill-available;
 }
 
 /* Landscape */
