@@ -6,6 +6,10 @@ body, html {
 	overflow-y: hidden;
 }
 
+html {
+	height: -webkit-fill-available;
+}
+
 @font-face {
 	font-family: Jazmen;
 	src: url(../fonts/jazmin-light.otf);
@@ -206,7 +210,8 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	height: 100vh;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
 }
