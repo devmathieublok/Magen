@@ -256,10 +256,9 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	min-height: 100vh;
+	height: 100vh;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
-	min-height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 915px) {
