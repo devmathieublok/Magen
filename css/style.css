@@ -261,7 +261,7 @@ p {
 	box-sizing: border-box;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
-	background-color: red;
+	background-color: green;
 	height: 100vh;
 	min-height: -webkit-fill-available;
 }
