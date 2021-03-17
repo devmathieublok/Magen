@@ -258,9 +258,7 @@ p {
 	box-sizing: border-box;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
-	background-color: purple;
-/*	max-height: 100vh;
-	min-height: -webkit-fill-available;*/
+	background-color: black;
 	height: calc(100vh - calc(100vh - 100%))
 }
 
