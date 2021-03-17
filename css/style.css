@@ -4,7 +4,6 @@ body, html {
 	font-family: Jazmen;
 }
 
-/* Landscape *//*
 .Landscape-Message {
 	display: none;
 	background-color: #00403D;
@@ -23,11 +22,7 @@ body, html {
 
 }
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
+@media only screen and (max-height: 414px) { 
   	.Home {
   		display: none;
   	}
@@ -36,20 +31,6 @@ body, html {
   		display: flex;
   	}
 }
-
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-  	.Home {
-  		display: none;
-  	}
-
-  	.Landscape-Message {
-  		display: flex;
-  	}
-}*/
 /* Landscape */
 
 @font-face {
