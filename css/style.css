@@ -3,8 +3,6 @@ body, html {
 	padding: 0px;
 	font-family: Jazmen;
 	overflow: hidden;
-	height: 100vh;
-	max-height: -webkit-fill-available;
 }
 
 /* Landscape *//*
@@ -261,9 +259,10 @@ p {
 	box-sizing: border-box;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
-	background-color: green;
-	height: 100vh;
-	min-height: -webkit-fill-available;
+	background-color: purple;
+/*	max-height: 100vh;
+	min-height: -webkit-fill-available;*/
+	height: calc(100vh - calc(100vh - 100%))
 }
 
 @media screen and (max-width: 915px) {
