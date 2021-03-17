@@ -2,8 +2,6 @@ body, html {
 	margin: 0px;
 	padding: 0px;
 	font-family: Jazmen;
-	overflow-x: hidden;
-	overflow-y: hidden;
 	min-height: 100vh;
   	/* mobile viewport bug fix */
   	min-height: -webkit-fill-available;
@@ -213,8 +211,7 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	min-height: 100vh;
-	min-height: -webkit-fill-available;
+	height: 100%;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
 }
@@ -307,6 +304,7 @@ footer {
 	justify-content: space-between;
 	z-index: 99;
 	flex-direction: column;
+	background-color: orange;
 }
 
 @media screen and (max-width: 414px) {
