@@ -256,9 +256,11 @@ p {
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	height: 100vh;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
+	background-color: orange;
+	height: 100vh;
+	max-height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 915px) {
