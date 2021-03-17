@@ -3,6 +3,8 @@ body, html {
 	padding: 0px;
 	font-family: Jazmen;
 	overflow: hidden;
+	height: 100vh;
+	max-height: -webkit-fill-available;
 }
 
 /* Landscape *//*
@@ -288,6 +290,7 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
+	max-height: -webkit-fill-available;
 	z-index: -1;
 }
 
