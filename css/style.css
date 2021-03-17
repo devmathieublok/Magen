@@ -60,6 +60,7 @@ video {
 	background-color: #F4EEE7;
 	cursor: none;
 	overflow: hidden;
+	image-rendering: -webkit-optimize-contrast;
 }
 
 /* H2 Responsive & Desk*/
@@ -233,6 +234,7 @@ p {
 	z-index: -1;
 	min-height: -webkit-fill-available;
 	height: 100vh;
+	image-rendering: -webkit-optimize-contrast;
 }
 
 .Wrapper {
@@ -340,7 +342,7 @@ footer {
 
 @media screen and (max-width: 1355px) {
 	.Contact-Links {
-		justify-content: end;
+		justify-content: flex-start;
 	}
 }
 
@@ -359,7 +361,7 @@ footer {
 @media screen and (max-width: 915px) {
 	.Contact-Links > a, span {
 		padding-top: 0px;
-		margin-bottom: 0px;
+		margin-bottom: 8px;
 	}
 }
 
