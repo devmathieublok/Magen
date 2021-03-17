@@ -261,9 +261,9 @@ p {
 	box-sizing: border-box;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
-	background-color: orange;
-	height: 100vh;
-	max-height: -webkit-fill-available;
+	background-color: red;
+	min-height: 100vh;
+	min-height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 915px) {
