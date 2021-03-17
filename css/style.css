@@ -6,6 +6,54 @@ body, html {
   	min-height: -webkit-fill-available;
 }
 
+/* Landscape */
+.Landscape-Message {
+	display: none;
+	background-color: #00403D;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	box-sizing: border-box;
+}
+
+.Landscape-Message > p {
+	margin:0px;
+	padding: 0px;
+	font-size: 25px;
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+  	.Home {
+  		display: none;
+  	}
+
+  	.Landscape-Message {
+  		display: flex;
+  	}
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+  	.Home {
+  		display: none;
+  	}
+
+  	.Landscape-Message {
+  		display: flex;
+  	}
+}
+/* Landscape */
+
 html {
 	height: -webkit-fill-available;
 }
