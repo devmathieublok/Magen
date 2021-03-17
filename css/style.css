@@ -306,6 +306,12 @@ footer {
 	flex-direction: column;
 }
 
+@media screen and (max-width: 414px) {
+	footer {
+		margin-bottom: 30px;
+	}
+}
+
 .Contact-Links {
 	width: 100%;
 	justify-content: space-between;
