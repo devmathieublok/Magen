@@ -4,7 +4,6 @@ body, html {
 	font-family: Jazmen;
 	min-height: 100vh;
   	min-height: -webkit-fill-available;
-  	overflow-x: hidden;
   	overflow-y: hidden;
 }
 
@@ -305,12 +304,6 @@ footer {
 	justify-content: space-between;
 	z-index: 99;
 	flex-direction: column;
-}
-
-@media screen and (max-width: 414px) {
-	footer {
-		margin-bottom: 60px;
-	}
 }
 
 .Contact-Links {
