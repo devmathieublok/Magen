@@ -1,0 +1,400 @@
+body, html {
+	margin: 0px;
+	padding: 0px;
+	font-family: Jazmen;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+@font-face {
+	font-family: Jazmen;
+	src: url(../fonts/jazmin-light.otf);
+	font-weight: 200;
+}
+
+h1,h2,p {
+	margin: 0px;
+	padding: 0px;
+	color: #F0ECEC;
+}
+
+a {
+	text-decoration: none;
+}
+
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1000;
+	object-fit:contain;
+	background-color: #F4EEE7;
+	cursor: none;
+}
+
+/* H2 Responsive & Desk*/
+
+h2 {
+	font-size: 90px;
+	line-height: 95px;
+	font-weight: 200;
+}
+
+@media screen and (max-width: 1440px) {
+	h2 {
+		font-size: 80px;
+		line-height: 90px;
+	}
+}
+
+@media screen and (max-width: 915px) {
+	h2 {
+		font-size: 9.8vw;
+		line-height: 11vw;
+	}
+}
+
+
+@media screen and (max-width: 414px) {
+	h2 {
+		font-size: 13vw;
+		line-height: 14vw;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.Wrapper {
+		padding:20px 15px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 > img {
+		width: 100px;
+	}
+}
+
+/* H2 Responsive & Desk*/
+
+/* P Responsive & Desk*/
+
+p {
+	font-size: 47px;
+	line-height: 55px;
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 1440px) {
+	p {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+
+@media screen and (max-width: 915px) {
+	p {
+		font-size: 5.2vw;
+		line-height: 7vw;
+	}
+}
+
+
+@media screen and (max-width: 414px) {
+	p {
+		font-size: 7vw;
+		line-height: 8vw;
+	}
+}
+
+/* P Responsive & Desk*/
+
+
+@media screen and (max-width: 915px) {
+	br {
+		display: none;
+	}
+}
+/* Basic Styles*/
+
+.LinkFullPage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+}
+
+@media screen and (max-width: 915px) {
+	.LinkFullPage {
+		display: none;
+	}
+}
+
+#ContactPointer {
+	position: fixed;
+	pointer-events: none;
+}
+
+@media screen and (max-width: 915px) {
+	#ContactPointer   {
+		display: none;
+	}
+}
+
+.Pointer {
+	background-color: #00403D;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	color: rgb(255, 255, 255, 1);
+	transition: color ease-in 0.3s;
+}
+
+.PointerHover {
+	color: rgb(255, 255, 255, 0);
+}
+
+.Magnet {
+  transition: transform .3s ease;
+}
+
+.PointerNav {
+	background-color: #00403D;
+	color: rgb(255, 255, 255, 1);
+	border-radius: 100%;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	height: fit-content;
+	min-width: 90px;
+	min-height: 90px;
+	font-size: 14px;
+	display: none;
+}
+
+@media screen and (max-width: 320px) {
+	.PointerNav {
+		min-width: fit-content;
+		min-height: fit-content;
+		border-radius: 20px;
+		padding: 10px 20px;
+	}
+}
+
+
+@media screen and (max-width: 915px) {
+	.PointerNav {
+		display: flex;
+	}
+}
+/* Cursor Pointer*/
+
+/* Content Style*/
+
+.Wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
+	height: 100vh;
+	z-index: 1;
+	transition: padding ease-in 0.5s;
+}
+
+@media screen and (max-width: 915px) {
+	.Wrapper {
+		padding:25px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.Wrapper {
+		padding:20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.Wrapper {
+		padding:20px 15px;
+	}
+}
+
+.Home {
+	background-image: url('../img/background/background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	z-index: -1;
+}
+
+@media screen and (max-width: 915px) {
+	.Nav   {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+/*Circle Style*/
+
+.Circle {
+	position: fixed;
+	right: -770px;
+	top: -490px;
+	width: 1270px;
+	opacity: 0.12;
+	transition: opacity 0.2s;
+}
+
+@media screen and (max-width: 915px) {
+	.Circle {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 913px) {
+	.Circle {
+		display: none;
+	}
+}
+
+.Main-Content {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: fit-content;
+}
+
+.Border {
+	width: 130px;
+	height: 3px;
+	background-color: #FFFFFF;
+	position: absolute;
+	transform: rotate(297deg);
+	right: -70px;
+	bottom: 50px;
+}
+
+@media screen and (max-width: 915px) {
+	.Border {
+		display: none;
+	}
+}
+
+/* Footer Style*/
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	z-index: 99;
+	flex-direction: column;
+}
+
+.Contact-Links {
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 1355px) {
+	.Contact-Links {
+		justify-content: end;
+	}
+}
+
+.Contact-Links > a, span {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 14px;
+	width: fit-content;
+	background: linear-gradient(#FFF, #FFF) left bottom/0% 1px no-repeat;
+	transition:1s all;
+	margin: 0px 30px 0px 0px;
+	padding-bottom: 5px;
+	cursor: default;
+}
+
+@media screen and (max-width: 915px) {
+	.Contact-Links > a, span {
+		padding-top: 0px;
+		margin-bottom: 0px;
+	}
+}
+
+.Contact-Links > a:last-child {
+	margin-right: 0px;
+	padding-bottom: 0px;
+}
+
+@media screen and (max-width: 414px) {
+	.Contact-Links > a, span {
+		font-size: 12px;
+		padding-bottom: 10px;
+		margin-right: 25px;
+		margin-bottom: 0px;
+	}
+
+	.Contact-Links > span:first-child {
+		margin-right: 0px;
+	}
+}
+
+.Contact-Links > a, .Footer-Logo > a  {
+	background: linear-gradient(#FFF, #FFF) left bottom/0% 1px no-repeat;
+	transition:1s all;
+}
+
+.Contact-Links > a:hover, .Footer-Logo >a:hover {
+	background: linear-gradient(#FFF, #FFF) left bottom/100% 1px no-repeat;
+	transition:1s all;
+}
+
+.Footer-Logo {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+}
+
+.Footer-Logo > a {
+	padding-bottom: 5px;
+}
+
+.Footer-Logo > a:first-child {
+	margin-right: 25px;
+}
+
+.Footer-Logo > a:first-child > img:first-child {
+	height: 18px;
+}
+
+.Footer-Logo > a > img {
+	height: 20px;
+}
+
+@media screen and (max-width: 320px) {
+	.Footer-Logo > a:first-child > img:first-child {
+		height: 13px;
+	}
+
+	.Footer-Logo > a > img {
+		height: 15px;
+	}
+
+	.Linkedin-Picto {
+		width: 18px;
+	}
+}
