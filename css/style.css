@@ -270,7 +270,7 @@ p {
 	}
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
 	.Wrapper {
 		justify-content: flex-start;
 	}
@@ -333,7 +333,7 @@ p {
 	width: fit-content;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
 	.Main-Content {
 		height: 60vh;
 		padding-top: 60px;
