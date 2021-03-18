@@ -291,6 +291,13 @@ p {
 	}
 }
 
+
+@media screen and (max-width: 500px) {
+	.Nav   {
+		margin-bottom: 30px;
+	}
+}
+
 /*Circle Style*/
 
 .Circle {
@@ -329,10 +336,13 @@ p {
 
 @media screen and (max-width: 500px) {
 	.Main-Content {
-		min-height: calc(100vh - 265px);
+		min-height: calc(100vh - 365px);
 		background-color: pink;
+		display: flex;
+		flex-direction: column;
 	}
 }
+
 .Border {
 	width: 130px;
 	height: 3px;
