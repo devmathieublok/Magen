@@ -335,8 +335,7 @@ p {
 
 @media screen and (max-width: 500px) {
 	.Main-Content {
-		height: 50vh;
-		background: orange;
+		height: 60vh;
 		padding-top: 60px;
 	}
 }
