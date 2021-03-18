@@ -333,13 +333,13 @@ p {
 	width: fit-content;
 }
 
-/*@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	.Main-Content {
-		height: 80vh;
-		display: flex;
-		flex-direction: column;
+		height: 50vh;
+		background: orange;
+		padding-top: 60px;
 	}
-}*/
+}
 
 .Border {
 	width: 130px;
