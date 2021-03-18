@@ -14,6 +14,12 @@ h1 > img {
 	width: 150px;
 }
 
+@media screen and (max-width: 915px) {
+	h1 > img {
+		width: 130px;
+	}	
+}
+
 .Background {
 	transform: scale(1.1);
 	background-image: url('../img/background/background.jpg');
@@ -73,7 +79,6 @@ h1 > img {
 }
 
 /*Circle Style*/
-
 .Circle {
 	position: fixed;
 	right: -770px;
@@ -100,6 +105,7 @@ h1 > img {
 		display: none;
 	}
 }
+/*Circle Style*/
 
 .Main-Content {
 	justify-content: center;
@@ -125,7 +131,6 @@ h1 > img {
 }
 
 /* Footer Style*/
-
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -185,13 +190,12 @@ footer {
 @media screen and (max-width: 414px) {
 	.Contact-Links > a, span {
 		font-size: 12px;
-		padding-bottom: 10px;
-		margin-right: 25px;
-		margin-bottom: 0px;
+		margin-bottom: 5px;
+		margin-right: 0px;
 	}
 
-	.Contact-Links > span:first-child {
-		margin-right: 0px;
+	.Contact-Links > span:last-child {
+		margin-bottom: 0px;
 	}
 }
 
@@ -248,7 +252,9 @@ footer {
 		width: 18px;
 	}
 }
+/*Footer*/
 
+/* Landscape */
 .Landscape-Message {
 	display: none;
 	background-color: #00403D;
