@@ -2,6 +2,10 @@ body, html {
 	margin: 0px;
 	padding: 0px;
 	font-family: Jazmen;
+	min-height: 100vh;
+ 	min-height: -webkit-fill-available;
+ 	height: -webkit-fill-available;
+ 	background-color: orange;
 }
 
 .Landscape-Message {
@@ -241,7 +245,6 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: -1;
-	height: 100vh;
 	image-rendering: -webkit-optimize-contrast;
 }
 
@@ -256,7 +259,6 @@ p {
 	z-index: 1;
 	transition: padding ease-in 0.5s;
 	cursor: pointer;
-	height: 100%;
 }
 
 @media screen and (max-width: 915px) {
