@@ -13,22 +13,25 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="animate__animated animate__fadeIn animate__delay-1s">
-	<video width="100%" autoplay="autoplay" muted playsinline>
+	<video width="100%" autoplay="autoplay" playsinline muted>
 		<source src="img/video/animation.mp4" type="video/mp4">
-	</video>
-	<div class="Landscape-Message">
-		<p>Rotate your screen for a better experience!</p>
-	</div>
+		</video>
+		<div class="Landscape-Message">
+			<p>Rotate your screen for a better experience!</p>
+		</div>
 		<section class="Home">
+			<div class="Background"></div>
 			<div id="ContactPointer">
 				<div class="Pointer"></div>
 			</div>
-			<!-- <a class="LinkFullPage" href="mailto:support@magenfinancial.com"></a> -->
+			<a class="LinkFullPage" href="mailto:support@magenfinancial.com"></a>
 			<img class="Circle" src="img/svg/circle.svg">
 			<section class="Wrapper">
 				<nav class="Nav">
 					<h1><img src="img/svg/logo.svg" alt="Welcome"></h1>
-					<a href="mailto:support@magenfinancial.com"><div class="PointerNav">Contact Us</div></a>
+					<a href="mailto:support@magenfinancial.com">
+						<div class="PointerNav">Contact Us</div>
+					</a>
 				</nav>
 				<div class="Main-Content">
 					<h2>A new Fintech<br> brokerage company</h2>
@@ -135,3 +138,38 @@
 		$('video').on('ended',function(){ $(this).fadeOut(); });
 	</script>
 	<!-- Video Fade -->
+
+	<!-- Background -->
+	<script>
+		var lFollowX = 0,
+		lFollowY = 0,
+		x = 0,
+		y = 0,
+		friction = 1 / 30;
+
+		function moveBackground() {
+			x += (lFollowX - x) * friction;
+			y += (lFollowY - y) * friction;
+
+			translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+			$('.Background').css({
+				'-webit-transform': translate,
+				'-moz-transform': translate,
+				'transform': translate
+			});
+
+			window.requestAnimationFrame(moveBackground);
+		}
+
+		$(window).on('mousemove click', function(e) {
+
+		var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+		var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+		lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollowY
+		lFollowY = (10 * lMouseY) / 100;
+		});
+
+		moveBackground();
+	</script>
+	<!-- Background -->
