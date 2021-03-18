@@ -63,7 +63,7 @@ video {
  	height: -webkit-fill-available;
 	z-index: 1000;
 	object-fit:contain;
-	background-color: red;
+	background-color: #F2ECE5;
 	cursor: none;
 }
 
