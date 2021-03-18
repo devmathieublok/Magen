@@ -10,6 +10,10 @@ body, html {
 	min-height: 100vh;
 }
 
+h1 > img {
+	width: 150px;
+}
+
 .Background {
 	transform: scale(1.1);
 	background-image: url('../img/background/background.jpg');
@@ -126,21 +130,33 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	z-index: 3;
-	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (max-width: 1225px) {
+	footer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 .Contact-Links {
 	width: 100%;
-	justify-content: space-between;
+	justify-content: flex-end;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-top: 15px;
 }
 
-@media screen and (max-width: 1355px) {
+@media screen and (max-width: 1225px) {
 	.Contact-Links {
 		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.Contact-Links {
+		justify-content: space-between;
 	}
 }
 
@@ -153,18 +169,17 @@ footer {
 	transition:1s all;
 	margin: 0px 30px 0px 0px;
 	padding-bottom: 5px;
-}
-
-@media screen and (max-width: 915px) {
-	.Contact-Links > a, span {
-		padding-top: 0px;
-		margin-bottom: 8px;
-	}
+	box-sizing: border-box;
 }
 
 .Contact-Links > a:last-child {
 	margin-right: 0px;
-	padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+	.Contact-Links > a, span{
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (max-width: 414px) {
@@ -196,8 +211,16 @@ footer {
 	width: fit-content;
 }
 
-.Footer-Logo > a {
-	padding-bottom: 5px;
+@media screen and (max-width: 1225px) {
+	.Footer-Logo {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.Footer-Logo {
+		margin-bottom: 20px;
+	}
 }
 
 .Footer-Logo > a:first-child {
@@ -403,7 +426,6 @@ p {
 }
 
 .Pointer {
-	background-color: #00403D;
 	border-radius: 100%;
 	display: flex;
 	align-items: center;
@@ -411,7 +433,13 @@ p {
 	width: 100px;
 	height: 100px;
 	color: rgb(255, 255, 255, 1);
-	transition: color ease-in 0.3s;
+	background-color: rgb(0, 64, 61, 1);
+	text-align: center;
+
+	-webkit-transition: background-color 0.3s ease-out;
+  	-moz-transition: background-color 0.3s ease-out;
+  	-o-transition: background-color 0.3s ease-out;
+  	transition: background-color 0.3s ease-out;
 }
 
 .Pointer:after {
@@ -423,7 +451,27 @@ p {
 }
 
 .ClickMeContent:after {
-	content: 'Click Here';
+	content: 'Click!';
+}
+
+.VisitUsContent:after {
+	content: 'Visit Us On Linkedin';
+}
+
+.VisitFinraContent:after {
+	content: 'Visit \a Finra.org';
+	white-space: pre;
+}
+
+.VisitSipcContent:after {
+	content: 'Visit \a Sipc.org';
+	white-space: pre;
+}
+
+
+.ColorPointer {
+	background-color: rgb(242, 237, 230, 1);
+	color: #00403D;
 }
 
 .PointerNav {
