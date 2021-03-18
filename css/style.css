@@ -418,11 +418,11 @@ p {
 }
 
 .CallMeContent:after {
-	content: 'Call Me'
+	content: 'Call Us'
 }
 
 .ClickMeContent:after {
-	content: 'Click Me';
+	content: 'Click Here';
 }
 
 .PointerNav {
