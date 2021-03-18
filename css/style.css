@@ -326,6 +326,13 @@ p {
 	position: relative;
 	width: fit-content;
 }
+
+@media screen and (max-width: 500px) {
+	.Main-Content {
+		height: 100%;
+		background-color: purple;
+	}
+}
 .Border {
 	width: 130px;
 	height: 3px;
@@ -353,8 +360,7 @@ footer {
 
 @media screen and (max-width: 500px) {
 	footer {
-		margin-top: 50px;
-		background-color: orange;
+		background-color: green;
 	}
 }
 
