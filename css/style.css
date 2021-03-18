@@ -86,8 +86,8 @@ h2 {
 
 @media screen and (max-width: 414px) {
 	h2 {
-		font-size: 13vw;
-		line-height: 14vw;
+		font-size: 10vw;
+		line-height: 11vw;
 	}
 }
 
