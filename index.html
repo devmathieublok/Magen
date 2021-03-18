@@ -13,17 +13,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="animate__animated animate__fadeIn animate__delay-1s">
-	<video width="100%" autoplay="autoplay" muted playsinline>
+<!-- 	<video width="100%" autoplay="autoplay" muted playsinline>
 		<source src="img/video/animation.mp4" type="video/mp4">
-	</video>
+	</video> -->
 	<div class="Landscape-Message">
 		<p>Rotate your screen for a better experience!</p>
 	</div>
 		<section class="Home">
 			<div id="ContactPointer">
-				<div class="Pointer">Contact Us</div>
+				<div class="Pointer"></div>
 			</div>
-			<a class="LinkFullPage" href="mailto:support@magenfinancial.com"></a>
+			<!-- <a class="LinkFullPage" href="mailto:support@magenfinancial.com"></a> -->
 			<img class="Circle" src="img/svg/circle.svg">
 			<section class="Wrapper">
 				<nav class="Nav">
@@ -37,16 +37,20 @@
 				</div>
 				<footer class="Footer">
 					<div class="Footer-Logo">
-						<a href="https://www.finra.org/#/" target="_Blank"><img src="img/svg/finca-logo.svg" alt="Finca"></a>
-						<a href="https://www.sipc.org/" target="_Blank"><img src="img/svg/sipc-logo.svg" alt="SIPC"></a>
+						<a class="ClickMe" href="https://www.finra.org/#/" target="_Blank">
+							<img src="img/svg/finca-logo.svg" alt="Finca">
+						</a>
+						<a class="ClickMe" href="https://www.sipc.org/" target="_Blank">
+							<img src="img/svg/sipc-logo.svg" alt="SIPC">
+						</a>
 					</div>
 					<div class="Contact-Links">
 						<span>1540 Broadway, Suite 4030 New York, NY 10036 United States</span>
-						<a class="Magnet PointerLink" href="tel:1.914.416.5695">Phone: +1.914.416.5695</a>
-						<a class="Magnet PointerLink" href="#!">Privacy Policy</a>
-						<a class="Magnet PointerLink" href="#!">Terms of Service</a>
+						<a class="Magnet PointerLink CallMe" href="tel:1.914.416.5695">Phone: +1.914.416.5695</a>
+						<a class="Magnet PointerLink ClickMe" href="#!">Privacy Policy</a>
+						<a class="Magnet PointerLink ClickMe" href="#!">Terms of Service</a>
 						<span href="#!">© 2021 Magen Financial LLC - All Rights Reserved.</span>
-						<a class="Magnet PointerLink" href="https://www.linkedin.com/company/magen-financial-llc/about/" target="_Blank"><img class="Linkedin-Picto" src="img/svg/ico-linkedin.svg"></a>
+						<a class="Magnet PointerLink ClickMe" href="https://www.linkedin.com/company/magen-financial-llc/about/" target="_Blank"><img class="Linkedin-Picto" src="img/svg/ico-linkedin.svg"></a>
 					</div>
 				</footer>
 			</section>
@@ -89,10 +93,12 @@
 			return (1-amt)*start+amt*end
 		}
 	</script>
+	<!-- Cursor Pointer -->
 
+	<!-- Pointer Content -->
 	<script>
 		$(document).ready(function() {     
-			$('.PointerLink, .Footer-Logo').hover(function(){     
+			$('.PointerLink, .Footer-Logo, .CallMe, .ClickMe').hover(function(){     
 				$('.Pointer').addClass('PointerHover');    
 			},     
 			function(){    
@@ -100,6 +106,29 @@
 			});
 		});
 	</script>
+
+	<script>
+		$(document).ready(function() {     
+			$('.CallMe').hover(function(){     
+				$('.Pointer').addClass('CallMeContent');    
+			},     
+			function(){    
+				$('.Pointer').removeClass('CallMeContent');     
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {     
+			$('.ClickMe').hover(function(){     
+				$('.Pointer').addClass('ClickMeContent');    
+			},     
+			function(){    
+				$('.Pointer').removeClass('ClickMeContent');     
+			});
+		});
+	</script>
+	<!-- Pointer Content -->
 
 	<!-- Video Fade -->
 	<script>
