@@ -246,6 +246,8 @@ p {
 	background-repeat: no-repeat;
 	z-index: -1;
 	image-rendering: -webkit-optimize-contrast;
+ 	height: -webkit-fill-available;
+
 }
 
 .Wrapper {
@@ -259,6 +261,7 @@ p {
 	z-index: 1;
 	transition: padding ease-in 0.5s;
 	cursor: pointer;
+ 	height: -webkit-fill-available;
 }
 
 @media screen and (max-width: 915px) {
