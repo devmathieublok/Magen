@@ -291,13 +291,6 @@ p {
 	}
 }
 
-
-@media screen and (max-width: 500px) {
-	.Nav   {
-		margin-bottom: 30px;
-	}
-}
-
 /*Circle Style*/
 
 .Circle {
@@ -336,8 +329,7 @@ p {
 
 @media screen and (max-width: 500px) {
 	.Main-Content {
-		min-height: calc(100vh - 365px);
-		background-color: pink;
+		height: 80vh;
 		display: flex;
 		flex-direction: column;
 	}
@@ -367,13 +359,6 @@ footer {
 	z-index: 99;
 	flex-direction: column;
 }
-
-@media screen and (max-width: 500px) {
-	footer {
-		background-color: green;
-	}
-}
-
 
 .Contact-Links {
 	width: 100%;
