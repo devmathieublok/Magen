@@ -5,7 +5,7 @@ body, html {
 	min-height: 100vh;
  	min-height: -webkit-fill-available;
  	height: -webkit-fill-available;
- 	background-color: orange;
+ 	overflow: hidden;
 }
 
 .Landscape-Message {
@@ -270,6 +270,7 @@ p {
 	}
 }
 
+
 @media screen and (max-width: 375px) {
 	.Wrapper {
 		padding:20px;
@@ -324,6 +325,12 @@ p {
 	align-items: center;
 	position: relative;
 	width: fit-content;
+}
+
+@media screen and (max-width: 500px) {
+	.Main-Content {
+		margin: 50px 0px;
+	}
 }
 
 .Border {
