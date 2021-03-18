@@ -239,10 +239,8 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	z-index: -1;
+	height: 100vh;
 	image-rendering: -webkit-optimize-contrast;
-	min-height: 100vh;
- 	min-height: -webkit-fill-available;
- 	height: -webkit-fill-available;
 }
 
 .Wrapper {
@@ -255,7 +253,9 @@ p {
 	box-sizing: border-box;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
- 	height: 100vh;
+	min-height: 100vh;
+ 	min-height: -webkit-fill-available;
+ 	height: -webkit-fill-available;
 	cursor: pointer;
 }
 
