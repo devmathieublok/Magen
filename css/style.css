@@ -253,10 +253,8 @@ p {
 	box-sizing: border-box;
 	z-index: 1;
 	transition: padding ease-in 0.5s;
-	min-height: 100vh;
- 	min-height: -webkit-fill-available;
- 	height: -webkit-fill-available;
 	cursor: pointer;
+	height: 100%;
 }
 
 @media screen and (max-width: 915px) {
