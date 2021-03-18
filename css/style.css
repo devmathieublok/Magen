@@ -354,6 +354,7 @@ footer {
 @media screen and (max-width: 500px) {
 	footer {
 		margin-top: 50px;
+		background-color: orange;
 	}
 }
 
