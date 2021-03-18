@@ -326,13 +326,6 @@ p {
 	position: relative;
 	width: fit-content;
 }
-
-@media screen and (max-width: 500px) {
-	.Main-Content {
-		margin: 50px 0px;
-	}
-}
-
 .Border {
 	width: 130px;
 	height: 3px;
@@ -357,6 +350,13 @@ footer {
 	z-index: 99;
 	flex-direction: column;
 }
+
+@media screen and (max-width: 500px) {
+	footer {
+		margin-top: 50px;
+	}
+}
+
 
 .Contact-Links {
 	width: 100%;
