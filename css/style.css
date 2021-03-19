@@ -147,19 +147,13 @@ footer {
 
 .Contact-Links {
 	width: 100%;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-@media screen and (max-width: 1225px) {
-	.Contact-Links {
-		justify-content: flex-start;
-	}
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 414px) {
 	.Contact-Links {
 		justify-content: space-between;
 	}
@@ -173,30 +167,20 @@ footer {
 	background: linear-gradient(#FFF, #FFF) left bottom/0% 1px no-repeat;
 	transition:1s all;
 	margin: 0px 30px 0px 0px;
-	padding-bottom: 5px;
 	box-sizing: border-box;
-}
-
-.Contact-Links > a:last-child {
-	margin-right: 0px;
-}
-
-@media screen and (max-width: 1000px) {
-	.Contact-Links > a, span{
-		margin-bottom: 10px;
-	}
+	padding-bottom: 5px;
 }
 
 @media screen and (max-width: 414px) {
 	.Contact-Links > a, span {
 		font-size: 12px;
-		margin-bottom: 5px;
-		margin-right: 0px;
+		padding-bottom: 10px;
+		margin: 0px 0px 0px 0px;
 	}
+}
 
-	.Contact-Links > span:last-child {
-		margin-bottom: 0px;
-	}
+.Contact-Links > a:last-child {
+	margin-right: 0px;
 }
 
 .Contact-Links > a, .Footer-Logo > a  {
@@ -217,18 +201,23 @@ footer {
 
 @media screen and (max-width: 1225px) {
 	.Footer-Logo {
-		margin-bottom: 10px;
+		margin-top: 20px;
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 414px) {
 	.Footer-Logo {
-		margin-bottom: 20px;
+		margin-top: 10px;
 	}
+}
+
+.Footer-Logo > a {
+	height: 20px;
+	padding-bottom: 5px;
 }
 
 .Footer-Logo > a:first-child {
-	margin-right: 25px;
+	margin-right: 20px;
 }
 
 .Footer-Logo > a:first-child > img:first-child {
@@ -237,21 +226,6 @@ footer {
 
 .Footer-Logo > a > img {
 	height: 20px;
-	padding-bottom: 5px;
-}
-
-@media screen and (max-width: 320px) {
-	.Footer-Logo > a:first-child > img:first-child {
-		height: 13px;
-	}
-
-	.Footer-Logo > a > img {
-		height: 15px;
-	}
-
-	.Linkedin-Picto {
-		width: 18px;
-	}
 }
 /*Footer*/
 
@@ -437,16 +411,16 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	color: rgb(255, 255, 255, 1);
 	background-color: rgb(0, 64, 61, 1);
 	text-align: center;
-
-	-webkit-transition: background-color 0.3s ease-out;
-  	-moz-transition: background-color 0.3s ease-out;
-  	-o-transition: background-color 0.3s ease-out;
-  	transition: background-color 0.3s ease-out;
+	-webkit-transition: background-color 0.3s ease-in;
+  	-moz-transition: background-color 0.3s ease-in;
+  	-o-transition: background-color 0.3s ease-in;
+  	transition: background-color 0.3s ease-in;
+  	font-size: 14px;
 }
 
 .Pointer:after {
@@ -462,7 +436,7 @@ p {
 }
 
 .VisitUsContent:after {
-	content: 'Visit Us On Linkedin';
+	content: 'Visit Our LinkedIn';
 }
 
 .VisitFinraContent:after {
@@ -489,8 +463,8 @@ p {
 	justify-content: center;
 	width: fit-content;
 	height: fit-content;
-	min-width: 90px;
-	min-height: 90px;
+	min-width: 80px;
+	min-height: 80px;
 	font-size: 14px;
 	display: none;
 }
@@ -511,7 +485,7 @@ p {
 	}
 }
 
-.Home, .Wrapper, .LinkFullPage, .Contact-Links > a, span {
+.Home, .Wrapper, .LinkFullPage, .Contact-Links > a, span, .Footer-Logo > a > img {
 	cursor: default !important;
 }
 /* Cursor Pointer*/
